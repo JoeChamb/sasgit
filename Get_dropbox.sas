@@ -11,3 +11,8 @@ filename _inbox clear;
 
 proc contents data=work.fanfinal;
 run;
+
+*Making changes;
+proc sort data=work.fanfinal;
+by name descending;
+run;
